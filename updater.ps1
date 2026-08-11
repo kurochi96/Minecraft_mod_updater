@@ -330,7 +330,7 @@ function Show-Menu {
 
   Write-Host ""
   Write-Host "========================================"
-  Write-Host " SwagSquad Minecraft MOD Updater"
+  Write-Host "Minecraft MOD Updater"
   Write-Host "========================================"
   Write-Host "現在のゲームフォルダ:"
   Write-Host " $GameDir"
