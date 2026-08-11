@@ -6,7 +6,7 @@
     "loader": "Forge",
     "loaderVersion": "47.4.18"
   },
-  "notes": "mods フォルダに置いた jar を同期します。sha256 は空文字のため検証なしです。必要なら後から各ファイルの SHA256 を設定してください。",
+  "notes": "GitHub の mods フォルダに置いた jar を同期します。sha256 は空文字のため検証なしです。必要なら後から各ファイルの SHA256 を設定してください。",
   "mods": [
     {
       "id": "citadel",
@@ -61,6 +61,20 @@
       "id": "inventorysorter",
       "fileName": "inventorysorter-1.20.1-23.0.11.jar",
       "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/inventorysorter-1.20.1-23.0.11.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "jei",
+      "fileName": "jei-1.20.1-forge-15.21.0.148.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/jei-1.20.1-forge-15.21.0.148.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "just-enough-resources",
+      "fileName": "JustEnoughResources-1.20.1-1.4.0.247.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/JustEnoughResources-1.20.1-1.4.0.247.jar",
       "sha256": "",
       "required": true
     },
