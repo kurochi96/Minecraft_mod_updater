@@ -1,0 +1,47 @@
+{
+  "name": "SwagSquad Maid MOD Pack",
+  "version": "2026.08.12-sample",
+  "minecraft": {
+    "version": "1.20.1",
+    "loader": "Forge",
+    "loaderVersion": "47.4.18"
+  },
+  "notes": "url と sha256 は実際に配布するファイルに合わせて差し替えてください。sha256 を空文字にすると検証を省略しますが、可能なら必ず設定してください。",
+  "mods": [
+    {
+      "id": "example-maid-mod",
+      "fileName": "example-maid-mod-1.20.1.jar",
+      "url": "https://example.com/mods/example-maid-mod-1.20.1.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "example-dependency",
+      "fileName": "example-dependency-forge-1.20.1.jar",
+      "url": "https://example.com/mods/example-dependency-forge-1.20.1.jar",
+      "sha256": "",
+      "required": true
+    }
+  ],
+  "syncFiles": [
+    {
+      "id": "example-managed-config",
+      "kind": "config",
+      "path": "config/example-maid-common.toml",
+      "url": "https://example.com/config/example-maid-common.toml",
+      "sha256": ""
+    }
+  ],
+  "doNotTouch": [
+    "options.txt",
+    "optionsof.txt",
+    "servers.dat",
+    "saves/",
+    "screenshots/",
+    "journeymap/",
+    "XaeroWaypoints/",
+    "XaeroWorldMap/",
+    "config/xaerominimap.txt",
+    "config/xaeroworldmap.txt"
+  ]
+}
