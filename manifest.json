@@ -1,37 +1,85 @@
 {
   "name": "SwagSquad Maid MOD Pack",
-  "version": "2026.08.12-sample",
+  "version": "2026.08.12",
   "minecraft": {
     "version": "1.20.1",
     "loader": "Forge",
     "loaderVersion": "47.4.18"
   },
-  "notes": "url と sha256 は実際に配布するファイルに合わせて差し替えてください。sha256 を空文字にすると検証を省略しますが、可能なら必ず設定してください。",
+  "notes": "mods フォルダに置いた jar を同期します。sha256 は空文字のため検証なしです。必要なら後から各ファイルの SHA256 を設定してください。",
   "mods": [
     {
-      "id": "example-maid-mod",
-      "fileName": "example-maid-mod-1.20.1.jar",
-      "url": "https://example.com/mods/example-maid-mod-1.20.1.jar",
+      "id": "citadel",
+      "fileName": "citadel-2.6.3-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/citadel-2.6.3-1.20.1.jar",
       "sha256": "",
       "required": true
     },
     {
-      "id": "example-dependency",
-      "fileName": "example-dependency-forge-1.20.1.jar",
-      "url": "https://example.com/mods/example-dependency-forge-1.20.1.jar",
+      "id": "create",
+      "fileName": "create-1.20.1-0.5.1.j.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/create-1.20.1-0.5.1.j.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "curios",
+      "fileName": "curios-forge-5.14.1+1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/curios-forge-5.14.1%2B1.20.1.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "fallingtree",
+      "fileName": "FallingTree-1.20.1-4.3.4.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/FallingTree-1.20.1-4.3.4.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "farmers-delight",
+      "fileName": "FarmersDelight-1.20.1-1.3.2.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/FarmersDelight-1.20.1-1.3.2.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "flywheel",
+      "fileName": "flywheel-forge-1.20.1-0.6.11-12.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/flywheel-forge-1.20.1-0.6.11-12.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "foodeffects",
+      "fileName": "foodeffects-0.1.0.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/foodeffects-0.1.0.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "inventorysorter",
+      "fileName": "inventorysorter-1.20.1-23.0.11.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/inventorysorter-1.20.1-23.0.11.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "l-enders-cataclysm",
+      "fileName": "L_Enders_Cataclysm-3.31.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/L_Enders_Cataclysm-3.31.jar",
+      "sha256": "",
+      "required": true
+    },
+    {
+      "id": "lionfishapi",
+      "fileName": "lionfishapi-3.0.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/lionfishapi-3.0.jar",
       "sha256": "",
       "required": true
     }
   ],
-  "syncFiles": [
-    {
-      "id": "example-managed-config",
-      "kind": "config",
-      "path": "config/example-maid-common.toml",
-      "url": "https://example.com/config/example-maid-common.toml",
-      "sha256": ""
-    }
-  ],
+  "syncFiles": [],
   "doNotTouch": [
     "options.txt",
     "optionsof.txt",
