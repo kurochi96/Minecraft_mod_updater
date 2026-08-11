@@ -9,7 +9,7 @@ rem 使い始める前に、下の RAW_BASE_URL だけ差し替えてくださ�
 rem GitHub の raw URL 例:
 rem set "RAW_BASE_URL=https://raw.githubusercontent.com/USER/REPO/main"
 rem ============================================================
-set "RAW_BASE_URL=https://example.com/YOUR_GITHUB_RAW_BASE_URL"
+set "RAW_BASE_URL=https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main"
 
 set "APP_DIR=%APPDATA%\.swagsquad_updater"
 set "UPDATER_PS1=%APP_DIR%\updater.ps1"
