@@ -11,7 +11,7 @@ set "MANIFEST_JSON=%APP_DIR%\manifest.json"
 if not exist "%APP_DIR%" mkdir "%APP_DIR%"
 
 echo.
-echo SwagSquad MOD updater preparing...
+echo MOD updater preparing...
 echo.
 
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; $base=$env:RAW_BASE_URL.TrimEnd('/'); if ($base -like 'https://example.com/*') { throw 'RAW_BASE_URL is not set.' }; Invoke-WebRequest -Uri ($base + '/updater.ps1') -OutFile $env:UPDATER_PS1 -UseBasicParsing; Invoke-WebRequest -Uri ($base + '/manifest.json') -OutFile $env:MANIFEST_JSON -UseBasicParsing"
@@ -25,7 +25,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%UPDATER_PS1%" -ManifestPath "%MANIFEST_JSON%"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; $code = Get-Content -LiteralPath $env:UPDATER_PS1 -Raw -Encoding UTF8; $script = [scriptblock]::Create($code); & $script -ManifestPath $env:MANIFEST_JSON"
 
 echo.
 pause
