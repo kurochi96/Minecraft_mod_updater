@@ -17,8 +17,8 @@
     },
     {
       "id": "create",
-      "fileName": "create-1.20.1-0.5.1.j.jar",
-      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/create-1.20.1-0.5.1.j.jar",
+      "fileName": "create-1.20.1-0.5.1.i.jar",
+      "url": "https://raw.githubusercontent.com/kurochi96/Minecraft_mod_updater/main/mods/create-1.20.1-0.5.1.i.jar",
       "sha256": "",
       "required": true
     },
